@@ -19,16 +19,16 @@
         <h1>Correlação de Pearson</h1>
     </header>
     <main>
-        <section class="container form">
+        <div class="container form">
             <div class="container__form">
                 <div class="container__form-inputs">
                     <div>
                         <label for="x">X</label>
-                        <input type="number" name="x" data-input data-x>
+                        <input type="number" name="x" id="x" data-input data-x>
                     </div>
                     <div>
                         <label for="y">Y</label>
-                        <input type="number" name="y" data-input data-y>
+                        <input type="number" name="y" id="y" data-input data-y>
                     </div>
                 </div>
             </div>
@@ -38,9 +38,9 @@
                 <button type="submit" id="btnConfirm"><img src="img/check.png"
                         alt="Confirmar e realizar cálculo"></button>
             </div>
-        </section>
+        </div>
 
-        <section class="container results">
+        <div class="container results">
             <div class="container__table-head">
                 <table class="container__table">
                     <tr>
@@ -64,12 +64,14 @@
                 </table>
             </div>
             <div class="container-output">
-                <h2>r= <p id="outputR"></p>
-                </h2>
-                <h2>t= <p id="outputT"></p>
-                </h2>
+                <div>
+                    <h2>r= </h2><p id="outputR"></p>
+                </div>
+                <div>
+                    <h2>t= </h2><p id="outputT"></p>
+                </div>      
             </div>
-        </section>
+        </div>
         <script src="js/calculator.js"></script>
     </main>
 </body>

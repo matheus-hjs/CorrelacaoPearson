@@ -7,11 +7,14 @@
     width: 90%;
     margin: 0 auto;
     justify-content: center;
-    h2 {
+    div {
         display: flex;
-        background: -webkit-linear-gradient($cor-do-titulo);
-        background-clip: text;
-        -webkit-text-fill-color: transparent;
-        font-size: 1.2rem;
+        flex-direction: row;
+        h2, p {
+            background: -webkit-linear-gradient($cor-do-titulo);
+            background-clip: text;
+            -webkit-text-fill-color: transparent;
+            font-size: 1.2rem;
+        }
     }
 } 

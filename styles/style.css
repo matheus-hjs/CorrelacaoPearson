@@ -203,8 +203,11 @@ header h1 {
   margin: 0 auto;
   justify-content: center;
 }
-.container-output h2 {
+.container-output div {
   display: flex;
+  flex-direction: row;
+}
+.container-output div h2, .container-output div p {
   background: -webkit-linear-gradient(45deg, rgb(162, 206, 252) 30%, rgb(207, 130, 247) 100%);
   -webkit-background-clip: text;
           background-clip: text;
