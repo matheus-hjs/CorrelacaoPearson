@@ -1,0 +1,17 @@
+@import '../abstract/variaveis';
+
+.container-output {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+    width: 90%;
+    margin: 0 auto;
+    justify-content: center;
+    h2 {
+        display: flex;
+        background: -webkit-linear-gradient($cor-do-titulo);
+        background-clip: text;
+        -webkit-text-fill-color: transparent;
+        font-size: 1.2rem;
+    }
+} 

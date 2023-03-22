@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pearson Correlation Calculator</title>
+    <link rel="stylesheet" href="styles/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono&display=swap" rel="stylesheet">
+</head>
+
+
+<body>
+    <header>
+        <img src="img/correlation.png" alt="Diagrama de correlação">
+        <h1>Correlação de Pearson</h1>
+    </header>
+    <main>
+        <section class="container form">
+            <div class="container__form">
+                <div class="container__form-inputs">
+                    <div>
+                        <label for="x">X</label>
+                        <input type="number" name="x" data-input data-x>
+                    </div>
+                    <div>
+                        <label for="y">Y</label>
+                        <input type="number" name="y" data-input data-y>
+                    </div>
+                </div>
+            </div>
+            <div class="container__form-buttons">
+                <button type="submit" id="btnRemove"><img src="img/minus.png" alt="Remover linha de input X Y"></button>
+                <button type="submit" id="btnAdd"><img src="img/plus.png" alt="Adicionar linha de input X Y"></button>
+                <button type="submit" id="btnConfirm"><img src="img/check.png"
+                        alt="Confirmar e realizar cálculo"></button>
+            </div>
+        </section>
+
+        <section class="container results">
+            <div class="container__table-head">
+                <table class="container__table">
+                    <tr>
+                        <th>ΣX</th>
+                        <th>ΣY</th>
+                        <th>ΣX²</th>
+                        <th>ΣY²</th>
+                        <th>ΣX*Y</th>
+                    </tr>
+                </table>
+            </div>
+            <div class="container__table-content">
+                <table class="container__table" id="sum-table">
+                    <tr>
+                        <td>0</td>
+                        <td>0</td>
+                        <td>0</td>
+                        <td>0</td>
+                        <td>0</td>
+                    </tr>
+                </table>
+            </div>
+            <div class="container-output">
+                <h2>r= <p id="outputR"></p>
+                </h2>
+                <h2>t= <p id="outputT"></p>
+                </h2>
+            </div>
+        </section>
+        <script src="js/calculator.js"></script>
+    </main>
+</body>
+
+</html>
